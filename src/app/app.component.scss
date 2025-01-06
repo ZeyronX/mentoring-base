@@ -1,48 +1,84 @@
-.header-low {
+.header {
+    font-family: 'Intern', Courier, monospace;
+}
+
+.header-upp {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
     color: white;
     background-color: #4B565E;
-    font-family: 'Intern', Courier, monospace;
+}
+
+.header__header-upp {
+    padding: 0px 240px;
+}
+
+.header__left-block {
+    display: flex;
+    align-items: center;
+}
+
+.header__right-block {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-company {
+    margin-right: 40px;
+}
+
+.header-upp__number {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-upp {
+    display: flex;
+    font-size: 16px;
+    line-height: 19.94px;
+}
+
+.header__nav-low {
+    display: flex;
+    font-size: 14px;
+    line-height: 16.94px;
+}
+
+.header__nav-item {
+    margin-right: 20px;
+}
+
+.header-upp__basket {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-low {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    background-color: #F0BA4E;
 }
 
 .header__header-low {
     padding: 0px 240px;
 }
 
-.header-low__left-block {
-    display: flex;
-    align-items: center;
+.header__logo-catlog {
+    margin-right: 10px;
 }
 
-.header-low__right-block {
-    display: flex;
-    align-items: center;
-}
-
-.header-low__number {
-    display: flex;
-    align-items: center;
-}
-
-.header-low__nav {
-    display: flex;
-}
-
-.header-low__nav-item {
-    margin-right: 20px;
-}
-
-.header-low__basket {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header-low__map {
+    font-size: 14px;
+    line-height: 14px;
 }
 
 .header--margin {
-    margin-right: 20px;
+    margin-right: 24px;
 }
 
 .basket-button {
