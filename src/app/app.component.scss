@@ -1,5 +1,6 @@
 .header {
     font-family: 'Intern', Courier, monospace;
+    width: 100%;
 }
 
 .header-upp {
@@ -7,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
+    width: 1440px;
     color: white;
     background-color: #4B565E;
 }
@@ -42,11 +44,15 @@
 
 .header__nav-low {
     display: flex;
+    flex-wrap: nowrap;
+    white-space:nowrap;
     font-size: 14px;
     line-height: 16.94px;
 }
 
 .header__nav-item {
+    display: flex;
+    flex-wrap: nowrap;
     margin-right: 20px;
 }
 
@@ -61,6 +67,7 @@
     justify-content: space-between;
     align-items: center;
     height: 48px;
+    width: 1440px;
     background-color: #F0BA4E;
 }
 
@@ -72,8 +79,23 @@
     margin-right: 10px;
 }
 
-.header__search {
+.header-search {
+    border-bottom: 1px solid #3C3C3B;
+}
+
+.header__search-input {
     width: 400px;
+    margin-left: 213px;
+    border-inline: none;
+    border-top: none;
+    background: none;
+    background-repeat: no-repeat;
+    color: #4B565E;
+    outline: none;
+}
+
+.search-icon {
+    margin-left: -25px;
 }
 
 .map-logo {
