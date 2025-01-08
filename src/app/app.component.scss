@@ -6,9 +6,10 @@
 
 .header-upp {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
+    max-width: 1320px;
     color: white;
 }
 
@@ -16,7 +17,7 @@
     width: 1920px;
     background-color: #4B565E;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header__header-upp {
@@ -80,7 +81,7 @@
     width: 1920px;
     background-color: #F0BA4E;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .header__header-low {
@@ -288,4 +289,5 @@
 .content-container {
     max-width: 1920px;
     margin: 0 auto;
+    position: relative;
 }
