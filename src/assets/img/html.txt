@@ -21,7 +21,7 @@
                 </div>
                 <div class="header-upp__basket">
                     <button class="basket-button" type="submit">
-                        <img class="basket-logo" src="/assets/img/Mask-group.svg" alt="">
+                        <img class="basket-logo" src="/assets/img/basket.svg" alt="">
                         <span class="basket-button-title">Пусто</span>
                     </button>
                 </div>
@@ -55,7 +55,7 @@
     <div class="item-cards">
         <div class="item-cards__pagination">
             <div class="item-cards__pagination-left__start">
-                <img src="/assets/img/basket.svg" alt="assortiment logo">
+                <img src="/assets/img/Mask-group.svg" alt="assortiment logo">
                 <div>
                     <b>Большой ассортимент</b>
                     <p>строительных материалов всегда в наличии</p>

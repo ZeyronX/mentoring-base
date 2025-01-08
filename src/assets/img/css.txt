@@ -1,22 +1,21 @@
 .header {
     font-family: 'Inter', sans-serif;
-    width: 1320px;
+    width: 100%;
     
 }
 
 .header-upp {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
+    width: 100%;
     color: white;
 }
 
 .header-upp-background {
-    width: 1920px;
+    width: 100%;
     background-color: #4B565E;
-    display: flex;
-    justify-content: space-around;
 }
 
 .header__header-upp {
@@ -77,10 +76,8 @@
 }
 
 .header-low-background {
-    width: 1920px;
+    width: 1440px;
     background-color: #F0BA4E;
-    display: flex;
-    justify-content: space-between;
 }
 
 .header__header-low {
@@ -152,6 +149,11 @@
 
 .background-large-block {
     width: 1920px;
+}
+
+.content-container {
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 .item-cards {
@@ -285,7 +287,3 @@
     height: 189px;
 }
 
-.content-container {
-    max-width: 1920px;
-    margin: 0 auto;
-}
