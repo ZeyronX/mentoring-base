@@ -1,3 +1,10 @@
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
 .header {
     width: 100%;
     background: none;
@@ -152,7 +159,7 @@
 }
 
 .background-large-block__item {
-    max-width: 100%;
+    width: 100%;
 }
 
 .item-cards {
@@ -290,6 +297,3 @@
     height: 189px;
 }
 
-.content-container {
-    background: none;
-}
