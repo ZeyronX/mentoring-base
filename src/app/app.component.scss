@@ -271,20 +271,18 @@ $mobile: 576px;
       }
 }
 
-.item-cards__grid-left {
-    height: 585.96px;
-    width: 100%;
-    background-image: url("/assets/img/left-grid.png");
-    background-repeat: no-repeat;
+.item-cards__gricd-left {
+    height: 421x;
+    width: 428px;
     box-shadow: 0px 20px 50px 0px #3C3C3B12;
     background-position-y: bottom;
     background-position-x: left;
-    margin-bottom: 500px;
-    padding: 15px;
+    // margin-bottom: 500px;
+    // padding: 15px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
     
 }
 
