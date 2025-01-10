@@ -269,7 +269,7 @@ $mobile: 576px;
     @include respond-to(tablet) {
         flex-direction: column;
       }
-      margin-bottom: 500px;
+      margin-bottom: 100px;
 }
 
 .item-cards__gricd-left {
@@ -401,6 +401,7 @@ $mobile: 576px;
 .product-card__four {
     width: 400px;
     height: 209px;
+    position: relative;
     background-image: url("/assets/img/power-socket.png");
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -414,4 +415,117 @@ $mobile: 576px;
     box-sizing: border-box;
 }
 
+// .popular-products__card {
+    
+// }
 
+.popular-products__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Inter";
+}
+
+
+.popular-products__slider {
+    display: flex;
+    align-items: center;
+    width: 272px;
+    height: 450px;
+    background-color: #F0BA4E;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+// .popular-products__card {
+
+// }
+
+.popular-products__title {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 33.89px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.popular-products__link {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 21.78px;
+    color: #F0BA4E;
+    text-decoration: none;
+}
+
+.popular-producs__item-background {
+    background-image: url("/assets/img/sales-item.svg"),
+                      url("/assets/img/logo-live-black.svg"),
+                      url("/assets/img/Bosch.png");
+                      
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position-x: left,right,center;
+    background-position-y: top,top,top;
+}
+
+.popular-products__sales-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.popular-products__sales-item-title {
+    font-size: 20px;
+    line-height: 24.2px;
+    white-space: nowrap;
+    color: #3C3C3B;
+    margin-bottom: 10px;
+}
+
+.popular-products__sales-item-articule {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #3C3C3B;
+}
+
+.popular-products__sales-item-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.popular-products__unit-price {
+    font-size: 16px;
+    line-height: 19.36px;
+    text-align: left;
+    color: #A1A0A0;
+}
+
+.popular-products__price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+.popular-products__sales-item-price-old-item {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    text-align: left;
+    text-decoration-line: line-through;
+    color: #3C3C3B;
+}
+
+.popular-products__sales-item-price-new-item {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    text-align: left;
+    color: #3C3C3B;
+}
