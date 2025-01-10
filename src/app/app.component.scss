@@ -265,24 +265,25 @@ $mobile: 576px;
     display: flex;
     height: 428px;
     margin-top: 20px;
-    
+    box-sizing: border-box;
     @include respond-to(tablet) {
         flex-direction: column;
       }
+      margin-bottom: 500px;
 }
 
 .item-cards__gricd-left {
-    width: 428px;
     box-shadow: 0px 20px 50px 0px #3C3C3B12;
+    background-image: url("/assets/img/left-grid.png");
+    background-repeat: no-repeat;
     background-position-y: bottom;
     background-position-x: left;
-    margin-bottom: 500px;
-    padding: 15px;
-    box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    padding: 16px;
+    box-sizing: border-box;
 }
 
 .product-card__title {
@@ -299,12 +300,12 @@ $mobile: 576px;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.94px;
+    color: #4B565E;
 }
 
-.item-cards__grid-left-action-link {
+.product-card-action-link {
     width: 40px;
     height: 40px;
-
 }
 
 .item-cards__grid-right {
@@ -348,32 +349,69 @@ $mobile: 576px;
 
 }
 
-.item-cards__grid-right-block__first {
-    background-image: url("/assets/img/balon.png");
-    width: 279px;
-    height: 279px;
-    background-repeat: no-repeat;
-}
-
-.item-cards__grid-right-block-second {
-    background-image: url("/assets/img/emal.png");
-    width: 209px;
+.product-card__first {
+    width: 400px;
     height: 209px;
+    background-image: url("/assets/img/balon.png");
     background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    box-shadow: 0px 20px 50px 0px #3C3C3B12;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+
 }
 
-.item-cards__grid-right-block-third {
+.product-card__second {
+    width: 400px;
+    height: 209px;
+    background-image: url("/assets/img/emal.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    box-shadow: 0px 20px 50px 0px #3C3C3B12;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.product-card__third {
+    width: 400px;
+    height: 209px;
     background-image: url("/assets/img/pena.png");
-    width: 245px;
-    height: 245px;
     background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    box-shadow: 0px 20px 50px 0px #3C3C3B12;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
 }
 
-.item-cards__grid-right-block-four {
+.product-card__four {
+    width: 400px;
+    height: 209px;
     background-image: url("/assets/img/power-socket.png");
-    width: 189px;
-    height: 189px;
     background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: left;
+    box-shadow: 0px 20px 50px 0px #3C3C3B12;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+    box-sizing: border-box;
 }
 
 
