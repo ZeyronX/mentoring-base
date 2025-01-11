@@ -601,3 +601,29 @@ $mobile: 576px;
     padding: 10px 20px;
 }
 
+.slider-container-control-button {
+    margin-block-end: 20px;
+}
+
+.slider-container-control-button-left,
+.slider-container-control-button-right {
+    position: relative;
+    inset-block-start: -49px;
+    inset-inline-start: 40px;
+    transform: translateY(-50%);
+    border: none;
+    inline-size: 30px;
+    block-size: 42px;
+    background-color: transparent;
+    background-image: url("/assets/img/button-control.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+.slider-container-control-button-right {
+    transform: rotate(180deg);
+    inset-inline-start: 1290px;
+    transform-origin: center;
+    inset-block-start: -70px;
+}
