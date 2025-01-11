@@ -436,9 +436,11 @@ $mobile: 576px;
     box-sizing: border-box;
 }
 
-// .popular-products__card {
-
-// }
+.popular-products__slider-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .popular-products__title {
     font-size: 28px;
@@ -454,7 +456,7 @@ $mobile: 576px;
     text-decoration: none;
 }
 
-.popular-producs__item-background {
+.popular-producs__item-background-left {
     background-image: url("/assets/img/sales-item.svg"),
                       url("/assets/img/logo-live-black.svg"),
                       url("/assets/img/Bosch.png");
@@ -463,6 +465,29 @@ $mobile: 576px;
     background-position-y: top,5px,top;
     padding: 20px;
 }
+
+.popular-producs__item-background-right-last {
+    background-image: url("/assets/img/new-products.svg"),
+                      url("/assets/img/sales-item.svg"),
+                      url("/assets/img/logo-live-black.svg"),
+                      url("/assets/img/Bosch.png");
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+    background-position-x: left, left, right, center;
+    background-position-y: top, 50px, 5px, top;
+    padding: 20px;
+}
+
+.popular-producs__item-background-right {
+    background-image: url("/assets/img/new-products.svg"),
+                      url("/assets/img/logo-live-black.svg"),
+                      url("/assets/img/Bosch.png");
+    background-repeat: no-repeat,no-repeat,no-repeat;
+    background-position-x: left,right,center;
+    background-position-y: top,5px,top;
+    padding: 20px;
+}
+
+
 
 .popular-products__sales-item {
     display: flex;
