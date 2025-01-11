@@ -460,7 +460,8 @@ $mobile: 576px;
                       url("/assets/img/Bosch.png");
     background-repeat: no-repeat,no-repeat,no-repeat;
     background-position-x: left,right,center;
-    background-position-y: top,top,top;
+    background-position-y: top,5px,top;
+    padding: 20px;
 }
 
 .popular-products__sales-item {
@@ -504,7 +505,7 @@ $mobile: 576px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%
+    margin-top: 8px;
 }
 
 .popular-products__sales-item-price-old-item {
@@ -528,22 +529,23 @@ $mobile: 576px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 .popular-products__counter-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     font-size: 16px;
     font-weight: 400;
     line-height: 19.36px;
     text-align: left;
     color: #3C3C3B;
+    margin-top: 10px;
 }
 
 .popular-products__counter-title {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .popular-products__counter-button {
@@ -560,15 +562,13 @@ $mobile: 576px;
     display: flex;
     justify-content: end;
     align-items: center;
-    width: 100%;
-    margin-top: 20px;
+    align-self: flex-end;
 }
 
 .popular-products__basket-button {
     font-size: 16px;
     font-weight: 500;
     line-height: 19.36px;
-    text-align: left;
     color: #3C3C3B;
     border: 2px solid #F0BA4E;
     background: none;
