@@ -415,10 +415,6 @@ $mobile: 576px;
     box-sizing: border-box;
 }
 
-// .popular-products__card {
-    
-// }
-
 .popular-products__header {
     display: flex;
     justify-content: space-between;
@@ -434,6 +430,7 @@ $mobile: 576px;
     height: 550px;
     padding: 7px;
     box-sizing: border-box;
+    margin-right: 40px;
 }
 
 .popular-products__slider-container {
@@ -609,7 +606,7 @@ $mobile: 576px;
 .slider-container-control-button-right {
     position: relative;
     inset-block-start: -49px;
-    inset-inline-start: 40px;
+    inset-inline-start: -30px;
     transform: translateY(-50%);
     border: none;
     inline-size: 30px;
@@ -618,12 +615,11 @@ $mobile: 576px;
     background-image: url("/assets/img/button-control.svg");
     background-repeat: no-repeat;
     background-size: contain;
-    
 }
 
 .slider-container-control-button-right {
     transform: rotate(180deg);
     inset-inline-start: 1290px;
     transform-origin: center;
-    inset-block-start: -70px;
+    inset-block-start: -116px;
 }
