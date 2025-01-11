@@ -33,12 +33,12 @@ $mobile: 576px;
     margin: 0 auto;
 }
 
-.header__item-first {
+.header--full-width-gray {
     background-color: #4B565E;
     width: 100%;
 }
 
-.header__item-first-content {
+.header__item-upper-nav-content {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
@@ -108,12 +108,12 @@ $mobile: 576px;
 }
 
 
-.header__item-second {
+.header--full-width-yellow {
     background-color: #F0BA4E;
     width: 100%;
 }
 
-.header__item-second-content {
+.header__item-lower-nav-content {
     max-width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
@@ -195,6 +195,17 @@ $mobile: 576px;
 .basket-button-title {
     display: flex;
     padding-block: 10px;
+}
+
+.background-large-block {
+    height: 700px;
+    width: 100%;
+    background-image: url("/assets/img/ten-backgroun-large.png"),
+                      url("/assets/img/Rectangle.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: left, center; 
+    background-position-y: center, center;
+    background-size: auto, cover;
 }
 
 .background-large-block__item {
