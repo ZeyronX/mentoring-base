@@ -8,9 +8,11 @@
                             <img src="/assets/img/logo-company.svg" alt="логотип компании">
                         </div>
                         <nav class="header__nav-upp">
-                            <div class="header__nav-item">Главная</div>
-                            <div class="header__nav-item">О компании</div>
-                            <div class="header__nav-item">Каталог</div>
+                            <div class="header__nav-item">{{header_Upper_Item1}}</div>
+                            <div class="header__nav-item">{{aboutCompany}}</div>
+                            <div class="header__nav-item" *ngIf="isShowCatalog">{{header_Upper_Item3}}</div>
+                            <button class="buttom-style" (click)="isShowCatalog = !isShowCatalog">Показать/Скрыть каталог</button>
+                            <button class="buttom-style" (click)="ChangeMenuText()">Изменить регистр</button>
                         </nav>
                     </div>
                     <div class="header__right-block">
@@ -32,8 +34,8 @@
             </div>
         </div>
     </div>
-    
-    
+
+
     <div class="header--full-width-yellow">
         <div class="container">
             <div class="header__item-lower-nav-content">
@@ -41,11 +43,8 @@
                     <div class="header__left-block">
                         <img class="header__logo-catlog" src="/assets/img/catalog-logo.svg" alt="">
                         <nav class="header__nav-low">
-                            <div class="header__nav-item">Каталог</div>
-                            <div class="header__nav-item">Стройматериалы</div>
-                            <div class="header__nav-item">Инструменты</div>
-                            <div class="header__nav-item">Электрика</div>
-                            <div class="header__nav-item">Интерьер и одежда</div>
+                            <div class="header__nav-item" *ngFor="let item of menuItems">{{item}}
+                            </div>
                         </nav>
                     </div>
                     <div class="header__right-block">
@@ -62,9 +61,11 @@
     </div>
 </div>
 
-<div class="background-large-block">
+<button class="buttom-style" (click)="isShowBackgroundLarge = !isShowBackgroundLarge">Скрыть/Показать картинку</button>
+<div class="background-large-block" *ngIf="isShowBackgroundLarge">
     <span class="background-large-block__item">Инструмент для вашего бизнеса</span>
 </div>
+
 
 <div class="container">
     <div class="item-cards">
@@ -92,16 +93,13 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="item-cards__advantages-button">
-                <button class="item-cards__pagination-button active--button">1</button>
-                <button class="item-cards__pagination-button">2</button>
-                <button class="item-cards__pagination-button">3</button>
-                <button class="item-cards__pagination-button">4</button>
-                <button class="item-cards__pagination-button">5</button>
+                <button class="item-cards__pagination-button active--button" *ngFor="let item of newPages">{{item}}
+                </button>
             </div>
         </div>
-   
+
         <div class="item-cards__grid">
             <div class="item-cards__gricd-left">
                 <div class="product-card__title">
@@ -125,7 +123,7 @@
                         </a>
                     </div>
                 </div>
-        
+
                 <div class="product-card product-card__second">
                     <div class="product-card__title">Лакокрасочные материалы</div>
                     <div class="product-card-action" style="align-self: flex-start;">
@@ -133,7 +131,7 @@
                         <a class="product-card-action-link"></a>
                     </div>
                 </div>
-                
+
                 <div class="product-card product-card__third">
                     <div class="product-card__title">Пены, клеи и <br>герметики</div>
                     <div class="product-card-action" style="align-self: flex-start;">
@@ -143,8 +141,8 @@
                         </a>
                     </div>
                 </div>
-                
-            
+
+
                 <div class="product-card product-card__four">
                     <div class="product-card__title">Розетки и выключателы</div>
                     <div class="product-card-action">
@@ -156,7 +154,7 @@
                 </div>
             </div>
         </div>
-        
+
         <section class="popular-products">
             <div class="popular-products__header">
                 <h3 class="popular-products__title">Популярные товары</h3>
@@ -171,6 +169,7 @@
                 <div class="popular-products__slider popular-producs__item-background-left">
                     <div class="popular-products__card">
                         <div class="popular-products__sales-item">
+                            <img src="/assets/img/Bosch.png" alt="Boasch">
                             <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
                             <span class="popular-products__sales-item-articule">Артикул 00004</span>
                         </div>
@@ -201,6 +200,7 @@
                 <div class="popular-products__slider popular-producs__item-background-left">
                     <div class="popular-products__card">
                         <div class="popular-products__sales-item">
+                            <img src="/assets/img/Bosch.png" alt="Boasch">
                             <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
                             <span class="popular-products__sales-item-articule">Артикул 00004</span>
                         </div>
@@ -231,6 +231,7 @@
                 <div class="popular-products__slider popular-producs__item-background-right-last">
                     <div class="popular-products__card">
                         <div class="popular-products__sales-item">
+                            <img src="/assets/img/Bosch.png" alt="Boasch">
                             <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
                             <span class="popular-products__sales-item-articule">Артикул 00004</span>
                         </div>
@@ -258,9 +259,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="popular-products__slider popular-producs__item-background-right">
+                <div class="popular-products__slider">
                     <div class="popular-products__card">
                         <div class="popular-products__sales-item">
+                            <img src="/assets/img/Bosch.png" alt="Boasch" >
+                            <div class="/assets/img/Bosch.png"></div>
                             <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
                             <span class="popular-products__sales-item-articule">Артикул 00004</span>
                         </div>
@@ -290,17 +293,17 @@
                 </div>
             </div>
         </section>
-        
+
         <div class="item-cards__reviews item-cards__reviews-background-right">
             <div class="item-cards__reviews-container">
-            <h3 class="item-cards__reviews-title">Более 10 000 наименований</h3>
-            <span class="item-cards__reviews-description">Инструмент для вашего бизнеса, разнообразных марок</span>
+                <h3 class="item-cards__reviews-title">Более 10 000 наименований</h3>
+                <span class="item-cards__reviews-description">Инструмент для вашего бизнеса, разнообразных марок</span>
             </div>
             <div class="item-cards__reviews-button">
                 <button class="item-cards__reviews-button-catalog">Перейти в каталог</button>
             </div>
         </div>
-        
+
         <section class="popular-products">
             <div class="popular-products__header">
                 <h3 class="popular-products__title">Новинки</h3>
@@ -341,7 +344,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="popular-products__slider popular-producs__item-background-right">
                     <div class="popular-products__card">
                         <div class="popular-products__sales-item">
@@ -371,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="popular-products__slider popular-producs__item-background-right">
                     <div class="popular-products__card">
                         <div class="popular-products__sales-item">
@@ -417,6 +420,7 @@
                         </div>
                         <div class="popular-products__counter">
                             <div class="popular-products__counter-container">
+                                
                                 <span class="popular-products__counter-title">Количество</span>
                                 <div class="popular-products__counter-button">
                                     <button class="popular-products__counter-button">-</button>
@@ -439,7 +443,7 @@
     <div class="container">
         <div class="footer__container-content">
             <div class="footer__item_upper">
-                
+
                 <div class="upper-left-block">
                     <div class="footer__item-content-item-logo">
                         <img src="/assets/img/logo-company.svg" alt="логотип компании">
@@ -447,15 +451,16 @@
                     <div class="footer__item-contacts">
                         <div class="footer__item-contacts-phone">
                             <div class="footer__item-contacts-logo-number">
-                                <img class="footer__item-contacts-logo-number" src="/assets/img/call-calling.svg" alt="логотип телефона">
+                                <img class="footer__item-contacts-logo-number" src="/assets/img/call-calling.svg"
+                                    alt="логотип телефона">
                                 <span class="footer__item-contacts-title">Контактный телефон</span>
                             </div>
                             <div class="footer__item-contacts-info">
-                                    <a href="tel:+78123090934">+ 7 (812) 309-09-34</a>
-                                    <a href="tel:+ 79650842909"><br>+ 7 (965) 084-29-09</a>
+                                <a href="tel:+78123090934">+ 7 (812) 309-09-34</a>
+                                <a href="tel:+ 79650842909"><br>+ 7 (965) 084-29-09</a>
                             </div>
                         </div>
-                        
+
                         <div class="footer__item-contacts-email">
                             <div class="footer__item-contacts-logo-number">
                                 <img src="/assets/img/sms.svg" alt="логотип email">
@@ -468,24 +473,26 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="upper-right-block">
                     <div class="upper-right-block__item">
                         <div class="upper-right-block__item-content-text">
                             <h3 class="upper-right-block__item-title">Остались вопросы?</h3>
-                            <span class="upper-right-block__item-description">Узнавайте первым о скидках, предложениях и событиях еженедельно в
+                            <span class="upper-right-block__item-description">Узнавайте первым о скидках, предложениях и
+                                событиях еженедельно в
                                 <br>своем почтовом ящике. Отпишитесь в любое время одним щелчком мыши.</span>
                         </div>
-                            <div class="upper-right-block__item-button">
+                        <div class="upper-right-block__item-button">
                             <button class="upper-right-block__item-button-input">
-                                <input class="upper-right-block__item-button-input-search" type="search" placeholder="Введите свою почту">
+                                <input class="upper-right-block__item-button-input-search" type="search"
+                                    placeholder="Введите свою почту">
                                 <button class="upper-right-block__item-button-send">Отправить</button>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer__item_lower">
                 <div class="footer__item_lower-left-block">
                     <nav class="footer__item-nav">
@@ -493,22 +500,27 @@
                         <div class="footer__item-nav-item">О компании</div>
                         <div class="footer__item-nav-item">Каталог</div>
                     </nav>
-                    
+
                     <div class="footer__item-nav-social">
                         <div class="footer__item-nav-social-container">
-                            <img class="footer__item-nav-social-item" src="/assets/img/facebook.svg" alt="логотип социальных сетей">
-                            <img class="footer__item-nav-social-item" src="/assets/img/youtube.svg" alt="логотип социальных сетей">
-                            <img class="footer__item-nav-social-item" src="/assets/img/whatsapp.svg" alt="логотип социальных сетей">
+                            <img class="footer__item-nav-social-item" src="/assets/img/facebook.svg"
+                                alt="логотип социальных сетей">
+                            <img class="footer__item-nav-social-item" src="/assets/img/youtube.svg"
+                                alt="логотип социальных сетей">
+                            <img class="footer__item-nav-social-item" src="/assets/img/whatsapp.svg"
+                                alt="логотип социальных сетей">
                         </div>
-                        
+
                         <div class="footer__item_lower-right-block">
                             <span class="footer__item_lower-right-block-text">© 2021-2022, EDE</span>
                         </div>
-                    
+
                     </div>
                 </div>
-            
+
             </div>
         </div>
     </div>
 </footer>
+
+<router-outlet></router-outlet>
