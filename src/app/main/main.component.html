@@ -1,10 +1,10 @@
 <button (click)="isShowBackroundLarge=!isShowBackroundLarge" class="buttom-style">Скрыть/Показать картинку</button>
-<div *ngIf="isShowBackroundLarge" class="background-large-block">
-    <span class="background-large-block__item">Инструмент для вашего бизнеса</span>
+<div *ngIf="isShowBackroundLarge" class="large-background-block">
+    <span class="large-background-block__item">Инструмент для вашего бизнеса</span>
 </div>
 
 
-<div class="container">
+<main class="container">
     <div class="item-cards">
         <div class="item-cards__advantages-cards">
             <div class="advantages-cards__pagination">
@@ -39,54 +39,54 @@
 
         <div class="item-cards__grid">
             <div class="item-cards__gricd-left">
-                <div class="product-card__title">
+                <div class="grid-cards__title">
                     Строительный отделочный инструмент
                 </div>
-                <div class="product-card-action">
+                <div class="grid-cards-action">
                     <span style="margin-right: 10px;">Перейти в каталог</span>
-                    <a class="product-card-action-link">
+                    <a class="grid-cards-action-link">
                         <img src="/assets/img/arrow-right.svg" alt="кнопка перехода в каталог">
                     </a>
                 </div>
             </div>
 
             <div class="item-cards__grid-right">
-                <div class="product-card product-card__first">
-                    <div class="product-card__title" style="text-align: right;">Эмали</div>
-                    <div class="product-card-action">
+                <div class="grid-cards grid-cards__first">
+                    <div class="grid-cards__title" style="text-align: right;">Эмали</div>
+                    <div class="grid-cards-action">
                         <span style="margin-right: 10px;">Перейти в каталог</span>
-                        <a class="product-card-action-link">
+                        <a class="grid-cards-action-link">
                             <img src="/assets/img/arrow-right.svg" alt="кнопка перехода в каталог">
                         </a>
                     </div>
                 </div>
 
-                <div class="product-card product-card__second">
-                    <div class="product-card__title">Лакокрасочные материалы</div>
-                    <div class="product-card-action" style="align-self: flex-start;">
+                <div class="grid-cards grid-cards__second">
+                    <div class="grid-cards__title">Лакокрасочные материалы</div>
+                    <div class="grid-cards-action" style="align-self: flex-start;">
                         <span style="margin-right: 10px;">Перейти в каталог</span>
-                        <a class="product-card-action-link">
+                        <a class="grid-cards-action-link">
                             <img src="/assets/img/arrow-right.svg" alt="кнопка перехода в каталог">
                         </a>
                     </div>
                 </div>
 
-                <div class="product-card product-card__third">
-                    <div class="product-card__title">Пены, клеи и <br>герметики</div>
-                    <div class="product-card-action" style="align-self: flex-start;">
+                <div class="grid-cards grid-cards__third">
+                    <div class="grid-cards__title">Пены, клеи и <br>герметики</div>
+                    <div class="grid-cards-action" style="align-self: flex-start;">
                         <span style="margin-right: 10px;">Перейти в каталог</span>
-                        <a class="product-card-action-link">
+                        <a class="grid-cards-action-link">
                             <img src="/assets/img/arrow-right.svg" alt="кнопка перехода в каталог">
                         </a>
                     </div>
                 </div>
 
 
-                <div class="product-card product-card__four">
-                    <div class="product-card__title">Розетки и выключателы</div>
-                    <div class="product-card-action">
+                <div class="grid-cards grid-cards__four">
+                    <div class="grid-cards__title">Розетки и выключателы</div>
+                    <div class="grid-cards-action">
                         <span style="margin-right: 10px;">Перейти в каталог</span>
-                        <a class="product-card-action-link">
+                        <a class="grid-cards-action-link">
                             <img src="/assets/img/arrow-right.svg" alt="кнопка перехода в каталог">
                         </a>
                     </div>
@@ -94,19 +94,19 @@
             </div>
         </div>
 
-        <section class="popular-products">
-            <div class="popular-products__header">
-                <h3 class="popular-products__title">Популярные товары</h3>
-                <a href="#" class="popular-products__link">Посмотреть все товары</a>
+        <section class="product-cards">
+            <div class="product-cards__header">
+                <h3 class="product-cards__title">Популярные товары</h3>
+                <a href="#" class="product-cards__link">Посмотреть все товары</a>
             </div>
-            <div class="popular-products__slider-container">
-                <div class="popular-products__slides">
+            <div class="product-cards__slider-container">
+                <div class="product-cards__slides">
                     <button class="slider-container-control-button-left">
                         <img src="/assets/img/button-control.svg" alt="button-control">
                     </button>
-                    <div class="popular-products__slider popular-producs__item-slide">
-                        <div class="popular-products__card">
-                            <div class="popular-products__sales-item">
+                    <div class="product-cards__slider popular-producs__item-slide">
+                        <div class="product-cards__card">
+                            <div class="product-cards__sales-item">
                                 <div class="position__items">
                                     <div class="element">
                                         <img class="logo-live-position" src="/assets/img/logo-live-black.svg" alt="logolives">
@@ -114,36 +114,36 @@
                                     </div>
                                     <img class="Boasch-position" src="/assets/img/Bosch.png" alt="Boasch">
                                 </div>
-                                <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
-                                <span class="popular-products__sales-item-articule">Артикул 00004</span>
+                                <span class="product-cards__title">Круг зачистной 125х6х22</span>
+                                <span class="product-cards__sales-item-articulation">Артикул 00004</span>
                             </div>
-                            <div class="popular-products__sales-item-price">
-                                <div class="popular-products__unit-price">
+                            <div class="product-cards__sales-item-price">
+                                <div class="product-cards__unit-price">
                                     <span>Цена за штуку</span>
                                 </div>
-                                <div class="popular-products__price-container">
-                                    <span class="popular-products__sales-item-price-old-item">52 руб</span>
-                                    <span class="popular-products__sales-item-price-new-item">48 руб</span>
+                                <div class="product-cards__price-container">
+                                    <span class="product-cards__sales-item-price-old-item">52 руб</span>
+                                    <span class="product-cards__sales-item-price-new-item">48 руб</span>
                                 </div>
                             </div>
-                            <div class="popular-products__counter">
-                                <div class="popular-products__counter-container">
-                                    <span class="popular-products__counter-title">Количество</span>
-                                    <div class="popular-products__counter-button">
-                                        <button class="popular-products__counter-button">-</button>
-                                        <button class="popular-products__counter-button">1</button>
-                                        <button class="popular-products__counter-button">+</button>
+                            <div class="product-cards__counter">
+                                <div class="product-cards__counter-container">
+                                    <span class="product-cards__counter-title">Количество</span>
+                                    <div class="button-quantity-products__quantity-cart-button">
+                                        <button class="button-quantity-products__quantity-cart-button">-</button>
+                                        <button class="button-quantity-products__quantity-cart-button">1</button>
+                                        <button class="button-quantity-products__quantity-cart-button">+</button>
                                     </div>
                                 </div>
-                                <div class="popular-products__basket">
-                                    <button class="popular-products__basket-button">В корзину</button>
+                                <div class="product-cards__basket">
+                                    <button class="product-cards__basket-button">В корзину</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="popular-products__slider popular-producs__item-slide">
-                        <div class="popular-products__card">
-                            <div class="popular-products__sales-item">
+                    <div class="product-cards__slider popular-producs__item-slide">
+                        <div class="product-cards__card">
+                            <div class="product-cards__sales-item">
                                 <div class="position__items">
                                     <div class="">
                                         <img class="logo-live-position" src="/assets/img/logo-live-black.svg" alt="logolives">
@@ -151,36 +151,36 @@
                                     </div>
                                     <img class="Boasch-position" src="/assets/img/Bosch.png" alt="Boasch">
                                 </div>
-                                <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
-                                <span class="popular-products__sales-item-articule">Артикул 00004</span>
+                                <span class="product-cards__title">Круг зачистной 125х6х22</span>
+                                <span class="product-cards__sales-item-articulation">Артикул 00004</span>
                             </div>
-                            <div class="popular-products__sales-item-price">
-                                <div class="popular-products__unit-price">
+                            <div class="product-cards__sales-item-price">
+                                <div class="product-cards__unit-price">
                                     <span>Цена за штуку</span>
                                 </div>
-                                <div class="popular-products__price-container">
-                                    <span class="popular-products__sales-item-price-old-item">52 руб</span>
-                                    <span class="popular-products__sales-item-price-new-item">48 руб</span>
+                                <div class="product-cards__price-container">
+                                    <span class="product-cards__sales-item-price-old-item">52 руб</span>
+                                    <span class="product-cards__sales-item-price-new-item">48 руб</span>
                                 </div>
                             </div>
-                            <div class="popular-products__counter">
-                                <div class="popular-products__counter-container">
-                                    <span class="popular-products__counter-title">Количество</span>
-                                    <div class="popular-products__counter-button">
-                                        <button class="popular-products__counter-button">-</button>
-                                        <button class="popular-products__counter-button">1</button>
-                                        <button class="popular-products__counter-button">+</button>
+                            <div class="product-cards__counter">
+                                <div class="product-cards__counter-container">
+                                    <span class="product-cards__counter-title">Количество</span>
+                                    <div class="button-quantity-products">
+                                        <button class="button-quantity-products__quantity-cart-button">-</button>
+                                        <button class="button-quantity-products__quantity-cart-button">1</button>
+                                        <button class="button-quantity-products__quantity-cart-button">+</button>
                                     </div>
                                 </div>
-                                <div class="popular-products__basket">
-                                    <button class="popular-products__basket-button">В корзину</button>
+                                <div class="product-cards__basket">
+                                    <button class="product-cards__basket-button">В корзину</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="popular-products__slider popular-producs__item-slide">
-                        <div class="popular-products__card">
-                            <div class="popular-products__sales-item">
+                    <div class="product-cards__slider popular-producs__item-slide">
+                        <div class="product-cards__card">
+                            <div class="product-cards__sales-item">
                                 <div class="position__items">
                                     <div class="">
                                         <img class="logo-live-position" src="/assets/img/logo-live-black.svg" alt="logolives">
@@ -189,36 +189,36 @@
                                     </div>
                                     <img class="Boasch-position" src="/assets/img/Bosch.png" alt="Boasch">
                                 </div>
-                                <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
-                                <span class="popular-products__sales-item-articule">Артикул 00004</span>
+                                <span class="product-cards__title">Круг зачистной 125х6х22</span>
+                                <span class="product-cards__sales-item-articulation">Артикул 00004</span>
                             </div>
-                            <div class="popular-products__sales-item-price">
-                                <div class="popular-products__unit-price">
+                            <div class="product-cards__sales-item-price">
+                                <div class="product-cards__unit-price">
                                     <span>Цена за штуку</span>
                                 </div>
-                                <div class="popular-products__price-container">
-                                    <span class="popular-products__sales-item-price-old-item">52 руб</span>
-                                    <span class="popular-products__sales-item-price-new-item">48 руб</span>
+                                <div class="product-cards__price-container">
+                                    <span class="product-cards__sales-item-price-old-item">52 руб</span>
+                                    <span class="product-cards__sales-item-price-new-item">48 руб</span>
                                 </div>
                             </div>
-                            <div class="popular-products__counter">
-                                <div class="popular-products__counter-container">
-                                    <span class="popular-products__counter-title">Количество</span>
-                                    <div class="popular-products__counter-button">
-                                        <button class="popular-products__counter-button">-</button>
-                                        <button class="popular-products__counter-button">1</button>
-                                        <button class="popular-products__counter-button">+</button>
+                            <div class="product-cards__counter">
+                                <div class="product-cards__counter-container">
+                                    <span class="product-cards__counter-title">Количество</span>
+                                    <div class="button-quantity-products__quantity-cart-button">
+                                        <button class="button-quantity-products__quantity-cart-button">-</button>
+                                        <button class="button-quantity-products__quantity-cart-button">1</button>
+                                        <button class="button-quantity-products__quantity-cart-button">+</button>
                                     </div>
                                 </div>
-                                <div class="popular-products__basket">
-                                    <button class="popular-products__basket-button">В корзину</button>
+                                <div class="product-cards__basket">
+                                    <button class="product-cards__basket-button">В корзину</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                     <div class="popular-products__slider popular-producs__item-slide">
-                        <div class="popular-products__card">
-                            <div class="popular-products__sales-item">
+                     <div class="product-cards__slider popular-producs__item-slide">
+                        <div class="product-cards__card">
+                            <div class="product-cards__sales-item">
                                 <div class="position__items">
                                     <div class="">
                                         <img class="logo-live-position" src="/assets/img/logo-live-black.svg" alt="logolives">
@@ -226,29 +226,29 @@
                                     </div>
                                     <img class="Boasch-position" src="/assets/img/Bosch.png" alt="Boasch">
                                 </div>
-                                <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
-                                <span class="popular-products__sales-item-articule">Артикул 00004</span>
+                                <span class="product-cards__title">Круг зачистной 125х6х22</span>
+                                <span class="product-cards__sales-item-articulation">Артикул 00004</span>
                             </div>
-                            <div class="popular-products__sales-item-price">
-                                <div class="popular-products__unit-price">
+                            <div class="product-cards__sales-item-price">
+                                <div class="product-cards__unit-price">
                                     <span>Цена за штуку</span>
                                 </div>
-                                <div class="popular-products__price-container">
-                                    <span class="popular-products__sales-item-price-old-item">52 руб</span>
-                                    <span class="popular-products__sales-item-price-new-item">48 руб</span>
+                                <div class="product-cards__price-container">
+                                    <span class="product-cards__sales-item-price-old-item">52 руб</span>
+                                    <span class="product-cards__sales-item-price-new-item">48 руб</span>
                                 </div>
                             </div>
-                            <div class="popular-products__counter">
-                                <div class="popular-products__counter-container">
-                                    <span class="popular-products__counter-title">Количество</span>
-                                    <div class="popular-products__counter-button">
-                                        <button class="popular-products__counter-button">-</button>
-                                        <button class="popular-products__counter-button">1</button>
-                                        <button class="popular-products__counter-button">+</button>
+                            <div class="product-cards__counter">
+                                <div class="product-cards__counter-container">
+                                    <span class="product-cards__counter-title">Количество</span>
+                                    <div class="button-quantity-products__quantity-cart-button">
+                                        <button class="button-quantity-products__quantity-cart-button">-</button>
+                                        <button class="button-quantity-products__quantity-cart-button">1</button>
+                                        <button class="button-quantity-products__quantity-cart-button">+</button>
                                     </div>
                                 </div>
-                                <div class="popular-products__basket">
-                                    <button class="popular-products__basket-button">В корзину</button>
+                                <div class="product-cards__basket">
+                                    <button class="product-cards__basket-button">В корзину</button>
                                 </div>
                             </div>
                         </div>
@@ -270,19 +270,19 @@
             </div>
         </div>
 
-        <section class="popular-products">
-            <div class="popular-products__header">
-                <h3 class="popular-products__title">Новинки</h3>
-                <a href="#" class="popular-products__link">Посмотреть все товары</a>
+        <section class="product-cards">
+            <div class="product-cards__header">
+                <h3 class="product-cards__title">Новинки</h3>
+                <a href="#" class="product-cards__link">Посмотреть все товары</a>
             </div>
-            <div class="popular-products__slider-container">
-                <div class="popular-products__slides">
+            <div class="product-cards__slider-container">
+                <div class="product-cards__slides">
                     <button class="slider-container-control-button-left">
                         <img src="/assets/img/button-control.svg" alt="button-control">
                     </button>
-                    <div class="popular-products__slider popular-producs__item-slide">
-                        <div class="popular-products__card">
-                            <div class="popular-products__sales-item">
+                    <div class="product-cards__slider popular-producs__item-slide">
+                        <div class="product-cards__card">
+                            <div class="product-cards__sales-item">
                                 <div class="position__items">
                                     <div class="">
                                         <img class="logo-live-position" src="/assets/img/logo-live-black.svg" alt="logolives">
@@ -290,36 +290,36 @@
                                     </div>
                                     <img class="Boasch-position" src="/assets/img/Bosch.png" alt="Boasch">
                                 </div>
-                                <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
-                                <span class="popular-products__sales-item-articule">Артикул 00004</span>
+                                <span class="product-cards__title">Круг зачистной 125х6х22</span>
+                                <span class="product-cards__sales-item-articulation">Артикул 00004</span>
                             </div>
-                            <div class="popular-products__sales-item-price">
-                                <div class="popular-products__unit-price">
+                            <div class="product-cards__sales-item-price">
+                                <div class="product-cards__unit-price">
                                     <span>Цена за штуку</span>
                                 </div>
-                                <div class="popular-products__price-container">
-                                    <span class="popular-products__sales-item-price-old-item">52 руб</span>
-                                    <span class="popular-products__sales-item-price-new-item">48 руб</span>
+                                <div class="product-cards__price-container">
+                                    <span class="product-cards__sales-item-price-old-item">52 руб</span>
+                                    <span class="product-cards__sales-item-price-new-item">48 руб</span>
                                 </div>
                             </div>
-                            <div class="popular-products__counter">
-                                <div class="popular-products__counter-container">
-                                    <span class="popular-products__counter-title">Количество</span>
-                                    <div class="popular-products__counter-button">
-                                        <button class="popular-products__counter-button">-</button>
-                                        <button class="popular-products__counter-button">1</button>
-                                        <button class="popular-products__counter-button">+</button>
+                            <div class="product-cards__counter">
+                                <div class="product-cards__counter-container">
+                                    <span class="product-cards__counter-title">Количество</span>
+                                    <div class="button-quantity-products__quantity-cart-button">
+                                        <button class="button-quantity-products__quantity-cart-button">-</button>
+                                        <button class="button-quantity-products__quantity-cart-button">1</button>
+                                        <button class="button-quantity-products__quantity-cart-button">+</button>
                                     </div>
                                 </div>
-                                <div class="popular-products__basket">
-                                    <button class="popular-products__basket-button">В корзину</button>
+                                <div class="product-cards__basket">
+                                    <button class="product-cards__basket-button">В корзину</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="popular-products__slider popular-producs__item-slide">
-                        <div class="popular-products__card">
-                            <div class="popular-products__sales-item">
+                    <div class="product-cards__slider popular-producs__item-slide">
+                        <div class="product-cards__card">
+                            <div class="product-cards__sales-item">
                                 <div class="position__items">
                                     <div class="">
                                         <img class="logo-live-position" src="/assets/img/logo-live-black.svg" alt="logolives">
@@ -327,36 +327,36 @@
                                     </div>
                                     <img class="Boasch-position" src="/assets/img/Bosch.png" alt="Boasch">
                                 </div>
-                                <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
-                                <span class="popular-products__sales-item-articule">Артикул 00004</span>
+                                <span class="product-cards__title">Круг зачистной 125х6х22</span>
+                                <span class="product-cards__sales-item-articulation">Артикул 00004</span>
                             </div>
-                            <div class="popular-products__sales-item-price">
-                                <div class="popular-products__unit-price">
+                            <div class="product-cards__sales-item-price">
+                                <div class="product-cards__unit-price">
                                     <span>Цена за штуку</span>
                                 </div>
-                                <div class="popular-products__price-container">
-                                    <span class="popular-products__sales-item-price-old-item">52 руб</span>
-                                    <span class="popular-products__sales-item-price-new-item">48 руб</span>
+                                <div class="product-cards__price-container">
+                                    <span class="product-cards__sales-item-price-old-item">52 руб</span>
+                                    <span class="product-cards__sales-item-price-new-item">48 руб</span>
                                 </div>
                             </div>
-                            <div class="popular-products__counter">
-                                <div class="popular-products__counter-container">
-                                    <span class="popular-products__counter-title">Количество</span>
-                                    <div class="popular-products__counter-button">
-                                        <button class="popular-products__counter-button">-</button>
-                                        <button class="popular-products__counter-button">1</button>
-                                        <button class="popular-products__counter-button">+</button>
+                            <div class="product-cards__counter">
+                                <div class="product-cards__counter-container">
+                                    <span class="product-cards__counter-title">Количество</span>
+                                    <div class="button-quantity-products__quantity-cart-button">
+                                        <button class="button-quantity-products__quantity-cart-button">-</button>
+                                        <button class="button-quantity-products__quantity-cart-button">1</button>
+                                        <button class="button-quantity-products__quantity-cart-button">+</button>
                                     </div>
                                 </div>
-                                <div class="popular-products__basket">
-                                    <button class="popular-products__basket-button">В корзину</button>
+                                <div class="product-cards__basket">
+                                    <button class="product-cards__basket-button">В корзину</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="popular-products__slider popular-producs__item-slide">
-                        <div class="popular-products__card">
-                            <div class="popular-products__sales-item">
+                    <div class="product-cards__slider popular-producs__item-slide">
+                        <div class="product-cards__card">
+                            <div class="product-cards__sales-item">
                                 <div class="position__items">
                                     <div class="">
                                         <img class="logo-live-position" src="/assets/img/logo-live-black.svg" alt="logolives">
@@ -364,36 +364,36 @@
                                     </div>
                                     <img class="Boasch-position" src="/assets/img/Bosch.png" alt="Boasch">
                                 </div>
-                                <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
-                                <span class="popular-products__sales-item-articule">Артикул 00004</span>
+                                <span class="product-cards__title">Круг зачистной 125х6х22</span>
+                                <span class="product-cards__sales-item-articulation">Артикул 00004</span>
                             </div>
-                            <div class="popular-products__sales-item-price">
-                                <div class="popular-products__unit-price">
+                            <div class="product-cards__sales-item-price">
+                                <div class="product-cards__unit-price">
                                     <span>Цена за штуку</span>
                                 </div>
-                                <div class="popular-products__price-container">
-                                    <span class="popular-products__sales-item-price-old-item">52 руб</span>
-                                    <span class="popular-products__sales-item-price-new-item">48 руб</span>
+                                <div class="product-cards__price-container">
+                                    <span class="product-cards__sales-item-price-old-item">52 руб</span>
+                                    <span class="product-cards__sales-item-price-new-item">48 руб</span>
                                 </div>
                             </div>
-                            <div class="popular-products__counter">
-                                <div class="popular-products__counter-container">
-                                    <span class="popular-products__counter-title">Количество</span>
-                                    <div class="popular-products__counter-button">
-                                        <button class="popular-products__counter-button">-</button>
-                                        <button class="popular-products__counter-button">1</button>
-                                        <button class="popular-products__counter-button">+</button>
+                            <div class="product-cards__counter">
+                                <div class="product-cards__counter-container">
+                                    <span class="product-cards__counter-title">Количество</span>
+                                    <div class="button-quantity-products__quantity-cart-button">
+                                        <button class="button-quantity-products__quantity-cart-button">-</button>
+                                        <button class="button-quantity-products__quantity-cart-button">1</button>
+                                        <button class="button-quantity-products__quantity-cart-button">+</button>
                                     </div>
                                 </div>
-                                <div class="popular-products__basket">
-                                    <button class="popular-products__basket-button">В корзину</button>
+                                <div class="product-cards__basket">
+                                    <button class="product-cards__basket-button">В корзину</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                     <div class="popular-products__slider popular-producs__item-slide">
-                        <div class="popular-products__card">
-                            <div class="popular-products__sales-item">
+                     <div class="product-cards__slider popular-producs__item-slide">
+                        <div class="product-cards__card">
+                            <div class="product-cards__sales-item">
                                 <div class="position__items">
                                     <div class="">
                                         <img class="logo-live-position" src="/assets/img/logo-live-black.svg" alt="logolives">
@@ -401,29 +401,29 @@
                                     </div>
                                     <img class="Boasch-position" src="/assets/img/Bosch.png" alt="Boasch">
                                 </div>
-                                <span class="popular-products__sales-item-title">Круг зачистной 125х6х22</span>
-                                <span class="popular-products__sales-item-articule">Артикул 00004</span>
+                                <span class="product-cards__title">Круг зачистной 125х6х22</span>
+                                <span class="product-cards__sales-item-articulation">Артикул 00004</span>
                             </div>
-                            <div class="popular-products__sales-item-price">
-                                <div class="popular-products__unit-price">
+                            <div class="product-cards__sales-item-price">
+                                <div class="product-cards__unit-price">
                                     <span>Цена за штуку</span>
                                 </div>
-                                <div class="popular-products__price-container">
-                                    <span class="popular-products__sales-item-price-old-item">52 руб</span>
-                                    <span class="popular-products__sales-item-price-new-item">48 руб</span>
+                                <div class="product-cards__price-container">
+                                    <span class="product-cards__sales-item-price-old-item">52 руб</span>
+                                    <span class="product-cards__sales-item-price-new-item">48 руб</span>
                                 </div>
                             </div>
-                            <div class="popular-products__counter">
-                                <div class="popular-products__counter-container">
-                                    <span class="popular-products__counter-title">Количество</span>
-                                    <div class="popular-products__counter-button">
-                                        <button class="popular-products__counter-button">-</button>
-                                        <button class="popular-products__counter-button">1</button>
-                                        <button class="popular-products__counter-button">+</button>
+                            <div class="product-cards__counter">
+                                <div class="product-cards__counter-container">
+                                    <span class="product-cards__counter-title">Количество</span>
+                                    <div class="button-quantity-products__quantity-cart-button">
+                                        <button class="button-quantity-products__quantity-cart-button">-</button>
+                                        <button class="button-quantity-products__quantity-cart-button">1</button>
+                                        <button class="button-quantity-products__quantity-cart-button">+</button>
                                     </div>
                                 </div>
-                                <div class="popular-products__basket">
-                                    <button class="popular-products__basket-button">В корзину</button>
+                                <div class="product-cards__basket">
+                                    <button class="product-cards__basket-button">В корзину</button>
                                 </div>
                             </div>
                         </div>
@@ -435,4 +435,4 @@
             </div>
         </section>
     </div>
-</div>
+</main>
