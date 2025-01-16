@@ -1,19 +1,36 @@
+import { NgFor } from "@angular/common";
 import { HttpClient } from "@angular/common/http";
-import { Component, inject } from "@angular/core";
+import { Component, inject, Injectable } from "@angular/core";
 
-const ConsoleResponse = (response: unknown) => console.log(response);
+@Injectable()
 
 @Component({
     selector: 'app-users-list',
     standalone: true,
     templateUrl: './users-list.component.html',
-    styleUrl: './users-list.component.scss'
+    styleUrl: './users-list.component.scss',
+    imports: [NgFor]
 })
 
 export class UsersListComponent {
-    readonly apiServiece = inject(HttpClient);
-    
+
+    readonly apiService = inject(HttpClient)
+    users: any = []
+
     constructor() {
-        this.apiServiece.get('https://jsonplaceholder.typicode.com/todos/1').subscribe(ConsoleResponse);
+        this.apiService.get<any>('https://jsonplaceholder.typicode.com/users').subscribe(
+            (response: any) => {
+                this.users = response;
+                console.log('USERS: ', this.users)
+
+            })
+                
+        }
+
+        deleteUser(id: number) {
+            this.users = this.users.filter(
+                (item: { id: number; }) => item.id !== id
+            )
+        }
+        
     }
-}

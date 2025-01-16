@@ -1,1 +1,12 @@
-КОМПОНЕНТ USER LIST
+<div class="content-container">
+    КОМПОНЕНТ USER LIST
+    <div style="display: flex;flex-wrap: wrap;">
+        <div *ngFor="let item of users" class="user-cards"> 
+            <p>{{$any(item).name}}</p>
+            <p>{{$any(item).email}}</p>
+            <p>{{$any(item).website}}</p>
+            <p>{{$any(item).company.name}}</p>
+            <button (click)="deleteUser(item.id)" class="user-button">УДАЛИТЬ ЮЗЕРА</button>
+        </div>
+    </div>
+</div>
