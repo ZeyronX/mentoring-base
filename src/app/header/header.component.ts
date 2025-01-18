@@ -24,7 +24,7 @@ export class HeaderComponent {
   isShowActiveButton = true;
 
   showCatalog: string = this.aboutComponent[0]
-
+  
   toogleCatalog = () => {
     if (this.isShowCatalog) {
       this.aboutComponent.pop()

@@ -25,3 +25,8 @@
 [0116/205338.688:ERROR:registration_protocol_win.cc(108)] CreateFile: Не удается найти указанный файл. (0x2)
 [0116/205349.740:ERROR:registration_protocol_win.cc(108)] CreateFile: Не удается найти указанный файл. (0x2)
 [0116/205633.920:ERROR:registration_protocol_win.cc(108)] CreateFile: Не удается найти указанный файл. (0x2)
+[0117/001207.061:ERROR:registration_protocol_win.cc(108)] CreateFile: Не удается найти указанный файл. (0x2)
+[0117/001222.795:ERROR:registration_protocol_win.cc(108)] CreateFile: Не удается найти указанный файл. (0x2)
+[0117/002156.534:ERROR:registration_protocol_win.cc(108)] CreateFile: Не удается найти указанный файл. (0x2)
+[0117/002202.286:ERROR:registration_protocol_win.cc(108)] CreateFile: Не удается найти указанный файл. (0x2)
+[0117/002219.829:ERROR:registration_protocol_win.cc(108)] CreateFile: Не удается найти указанный файл. (0x2)
