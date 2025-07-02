@@ -1,7 +1,10 @@
 import { HttpClient } from "@angular/common/http";
 import { inject, Injectable } from "@angular/core";
 
-Injectable({'providedIn': "root"})
+@Injectable({
+  providedIn: 'root'  // ✅ Обязательно!
+})
+
 
 export class ApiService {
    readonly apiService = inject(HttpClient);
