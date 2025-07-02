@@ -22,7 +22,7 @@
   
   body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Roboto', sans-serif;
   }
   
   /**
@@ -350,3 +350,5 @@
   }
   
   @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/inter.min.css");
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

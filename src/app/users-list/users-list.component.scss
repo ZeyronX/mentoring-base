@@ -1,22 +1,55 @@
-.content-container {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+.user-list-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f0f0f0;
 }
 
-.user-cards {
-    width: 200px;
-    height: 200px;
-    border: 1px solid black; 
-    box-shadow: 0px 20px 50px 0px #3C3C3B12;
-    margin: 20px;
-    padding: 10px;
+.user-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.user-button {
-    border: 1px solid black;
-    box-shadow: 0px 20px 50px 0px #3C3C3B12;
-    font-weight: 450;
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 24px;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 6px;
+    background-color: #3f51b5;
+    margin: 12px auto 0;
+    border-radius: 3px;
+  }
+
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInDown 500ms ease-out forwards;
 }
 
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  width: 100%;
+}

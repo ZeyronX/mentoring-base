@@ -1,11 +1,10 @@
-<div class="content-container">
-    КОМПОНЕНТ USER LIST
-    <div style="display: flex;flex-wrap: wrap;">
-        <div *ngFor="let item of users" class="user-cards"> 
-            <app-users-card [user]="item" (deleteUser)="deleteUser($event)"></app-users-card>
-        </div>
-    </div>
+<div class="user-list-container">
+  <h2>Список пользователей</h2>
+  <div class="user-list-grid">
+    <app-users-card
+      *ngFor="let user of users"
+      [user]="user"
+      (deleteUser)="onDeleteUser($event)">
+    </app-users-card>
+  </div>
 </div>
-dffdffdddsffsdf
-fsd
-fdsfdsfs

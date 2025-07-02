@@ -1,0 +1,71 @@
+.user-card {
+  border: 1px solid #e0e0e0;
+  background: #2a2a2a;
+  border-radius: 16px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%);
+  overflow: hidden;
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+  }
+
+  mat-card-header {
+    color: #e0e0e0;
+    background: #2a2a2a;
+    border-bottom: 1px solid #ff333300;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 16px;
+  }
+
+   mat-card-subtitle {
+    font-size: 14px;
+    color: #bbb;
+  }
+
+  mat-card-content {
+    padding: 16px;
+    color: #ffffff;
+    background: #000000f5;
+  }
+
+  mat-card-actions button {
+    transition: all 0.2s ease;
+    border-radius: 8px;
+    background: #ffffff96;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: rgba(187, 34, 23, 0.815);
+      transform: scale(1.1);
+    }
+
+    mat-icon {
+      transition: transform 0.2s;
+      color: #2a2a2a;
+    }
+
+    &:hover mat-icon {
+      transform: rotate(-20deg);
+      color: #2a2a2a;
+    }
+  }
+}
+
+.mdc-card__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: 52px;
+    padding: 8px;
+    background: #cacacab7;
+    border-top: 1px solid #ff333300;
+}
