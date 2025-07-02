@@ -2,8 +2,10 @@
     КОМПОНЕНТ USER LIST
     <div style="display: flex;flex-wrap: wrap;">
         <div *ngFor="let item of users" class="user-cards"> 
-            <app-users-card></app-users-card>
-            <button (click)="deleteUser(item.id)" class="user-button">УДАЛИТЬ ЮЗЕРА</button>
+            <app-users-card [user]="item" (deleteUser)="deleteUser($event)"></app-users-card>
         </div>
     </div>
 </div>
+dffdffdddsffsdf
+fsd
+fdsfdsfs
