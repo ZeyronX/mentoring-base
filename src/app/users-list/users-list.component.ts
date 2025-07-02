@@ -1,4 +1,4 @@
-import { NgFor } from "@angular/common";
+import { CommonModule, NgFor } from "@angular/common";
 import { Component, inject, Injectable } from "@angular/core";
 import { ApiService } from "../api.service"; 
 import { UserCardComponent } from "./user-card/user-card.component";
@@ -13,20 +13,22 @@ import { MatSnackBar } from '@angular/material/snack-bar'; // ✅ Добавле
     selector: 'app-users-list',
     standalone: true,
     templateUrl: './users-list.component.html',
-    styleUrls: ['./users-list.component.scss'], // ✅ Исправлено: styleUrl → styleUrls
-    imports: [NgFor, UserCardComponent, MatListModule, MatIconModule, MatButtonModule]
+    styleUrls: ['./users-list.component.scss'],
+    imports: [CommonModule,NgFor, UserCardComponent, MatListModule, MatIconModule, MatButtonModule]
 })
 
 export class UsersListComponent {
     readonly usersApiService = inject(ApiService);
-    readonly snackBar = inject(MatSnackBar); // ✅ Добавлено
-
+    readonly snackBar = inject(MatSnackBar);
+    skeletonArray = Array(6);
+    loading = true;
     users: any = [];
 
     constructor() {
         this.usersApiService.getUsers().subscribe(
             (response: any) => {
                 this.users = response;
+                this.loading = false;
             }
         );
     }

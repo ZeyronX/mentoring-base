@@ -1,10 +1,27 @@
-<div class="user-list-container">
-  <h2>Список пользователей</h2>
-  <div class="user-list-grid">
-    <app-users-card
-      *ngFor="let user of users"
-      [user]="user"
-      (deleteUser)="onDeleteUser($event)">
-    </app-users-card>
-  </div>
+<div class="user-list-wrapper">
+  <ng-container *ngIf="loading; else userList">
+    <div class="user-list-container">
+      <h2>Список пользователей</h2>
+      <div class="user-list-grid">
+        <div class="skeleton-card shimmer" *ngFor="let s of skeletonArray">
+          <div class="skeleton-title"></div>
+          <div class="skeleton-line"></div>
+          <div class="skeleton-line short"></div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #userList>
+    <div class="user-list-container">
+      <h2>Список пользователей</h2>
+      <div class="user-list-grid">
+        <app-users-card
+          *ngFor="let user of users"
+          [user]="user"
+          (deleteUser)="onDeleteUser($event)">
+        </app-users-card>
+      </div>
+    </div>
+  </ng-template>
 </div>
