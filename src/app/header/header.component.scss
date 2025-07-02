@@ -182,3 +182,60 @@
 .buttom-style-size-show-text {
     width: 110px;
 }
+
+.container {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.navigation-section {
+  max-width: 1900px;
+  margin: 0 auto 24px auto;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-strip-top,
+.navigation-strip-bottom {
+  height: 22px;
+  background-color: #121212d2;
+}
+
+.navigation-content {
+    background-color: #4B565E;
+    padding: 4px;
+    color: #fff;
+    text-align: center;
+}
+
+.navigation-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.header__button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.dark-button {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.dark-button:hover {
+  background-color: #555;
+}

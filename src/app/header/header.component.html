@@ -5,13 +5,10 @@
                 <div class="header-upp">
                     <div class="header__left-block">
                         <div class="header__logo-company">
-                            <button class="buttom-style buttom-style-size-users" routerLink="/users">Пользователь</button>
                             <img src="/assets/img/logo-company.svg" alt="логотип компании">
                         </div>
                         <nav class="header__nav-upp">
                             <div class="header__nav-item" *ngFor="let item of aboutComponent">{{item}}</div>
-                            <button class="buttom-style buttom-style-size-show-catalog" (click)="toogleCatalog()">Показать/Скрыть каталог</button>
-                            <button class="buttom-style buttom-style-size-show-text" (click)="ChangeMenuText()">Изменить регистр</button>
                         </nav>
                     </div>
                     <div class="header__right-block">
@@ -59,3 +56,17 @@
         </div>
     </div>
 </div>
+<div class="navigation-section">
+  <div class="navigation-strip-top"></div>
+  <div class="navigation-content">
+    <span class="navigation-title">Навигация по сайту</span>
+    <div class="header__button-group">
+      <button class="dark-button" routerLink="/users">Пользователи</button>
+      <button class="dark-button" routerLink="/todos">Задачи</button>
+      <button class="dark-button" routerLink="/admin">Админка</button>
+      <button class="dark-button" (click)="toogleCatalog()">Показать/Скрыть каталог</button>
+      <button class="dark-button" (click)="ChangeMenuText()">Изменить регистр</button>
+    </div>
+  </div>
+
+  <div class="navigation-strip-bottom"></div>
