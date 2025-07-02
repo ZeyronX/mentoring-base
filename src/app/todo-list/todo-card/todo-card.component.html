@@ -1,0 +1,14 @@
+<mat-card class="todo-card">
+  <mat-card-title>Задача #{{ todo.id }}</mat-card-title>
+  <mat-card-content>
+    <p><strong>Пользователь:</strong> {{ todo.userId }}</p>
+    <p><strong>Название:</strong> {{ todo.title }}</p>
+    <p><strong>Статус:</strong> {{ todo.completed ? '✅ Выполнено' : '❌ Не выполнено' }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-raised-button color="warn" (click)="onDeleteTodo(todo.id)">
+      <mat-icon>delete</mat-icon>
+      Удалить
+    </button>
+  </mat-card-actions>
+</mat-card>

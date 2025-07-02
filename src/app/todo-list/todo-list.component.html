@@ -1,0 +1,23 @@
+<ng-container *ngIf="loading; else todoList">
+  <div class="todo-list-container">
+    <h2>Список задач</h2>
+    <div class="todo-grid">
+      <div class="skeleton-card shimmer" *ngFor="let s of skeletonArray">
+        <div class="skeleton-title"></div>
+        <div class="skeleton-line"></div>
+        <div class="skeleton-line short"></div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #todoList>
+  <div class="todo-list-container">
+    <h2>Список задач</h2>
+    <div class="todo-grid">
+      <div *ngFor="let item of todos">
+        <app-todo-card [todo]="item" (deleteTodo)="onDeleteTodo($event)"></app-todo-card>
+      </div>
+    </div>
+  </div>
+</ng-template>
