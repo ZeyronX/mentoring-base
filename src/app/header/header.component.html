@@ -61,12 +61,12 @@
   <div class="navigation-content">
     <span class="navigation-title">Навигация по сайту</span>
     <div class="header__button-group">
+      <button class="dark-button" routerLink="/admin">Админка</button>
       <button class="dark-button" routerLink="/users">Пользователи</button>
       <button class="dark-button" routerLink="/todos">Задачи</button>
-      <button class="dark-button" routerLink="/admin">Админка</button>
       <button class="dark-button" (click)="toogleCatalog()">Показать/Скрыть каталог</button>
       <button class="dark-button" (click)="ChangeMenuText()">Изменить регистр</button>
+      <button (click)="isShowBackroundLarge=!isShowBackroundLarge" class="dark-button">Скрыть/Показать картинку</button>
     </div>
   </div>
-
   <div class="navigation-strip-bottom"></div>
