@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
-import { NgFor, NgIf } from "@angular/common";
+import { NgFor } from "@angular/common";
 
 
 
 @Component({
     selector: "app-main-component",
     standalone: true,
-    imports: [NgFor,NgIf],
+    imports: [NgFor],
     templateUrl: "./main.component.html",
     styleUrl: "./main.component.scss"
 })
